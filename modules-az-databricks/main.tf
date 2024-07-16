@@ -35,7 +35,7 @@ resource "azurerm_databricks_workspace" "this" {
   managed_resource_group_name = local.managed_resource_group_name
   location                    = var.location
   sku                         = var.databricks_sku
-  tags = var.tags
+  tags                        = var.tags
 
   # Explicit dependency on the resource group
   depends_on = [azurerm_resource_group.this]
