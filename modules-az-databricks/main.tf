@@ -1,15 +1,4 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 2.46" # Specify the version you're targeting
-    }
-  }
-}
 
-provider "azurerm" {
-  features {}
-}
 #Azure Resouce Group
 resource "azurerm_resource_group" "this" {
   count    = var.create_resource_group ? 1 : 0
