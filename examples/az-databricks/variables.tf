@@ -1,7 +1,6 @@
 variable "create_resource_group" {
   description = "Whether to create a new resource group"
   type        = bool
-  default     = null
 }
 
 variable "spoke_resource_group_name" {
@@ -23,7 +22,6 @@ variable "tags" {
 variable "create_databricks_workspace" {
   description = "Whether to create a Databricks workspace"
   type        = bool
-  default     = null
 }
 
 variable "databricks_workspace_name" {
@@ -45,7 +43,6 @@ variable "databricks_sku" {
 variable "create_storage_account" {
   description = "Whether to create a new storage account"
   type        = bool
-  default     = null
 }
 
 variable "storage_account_name" {
@@ -66,7 +63,6 @@ variable "storage_account_replication_type" {
 variable "create_blob_container" {
   description = "Whether to create a new blob container"
   type        = bool
-  default     = null
 }
 
 variable "blob_container_name" {
